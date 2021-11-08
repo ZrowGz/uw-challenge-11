@@ -1,0 +1,319 @@
+Last login: Mon Nov  1 19:02:13 on ttys001
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % git pull https://github.com/zcor/uw_fintech_21.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+From https://github.com/zcor/uw_fintech_21
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % git pull https://github.com/zcor/uw_fintech_21.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 67, done.
+remote: Counting objects: 100% (67/67), done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 63 (delta 14), reused 63 (delta 14), pack-reused 0
+Unpacking objects: 100% (63/63), 1.39 MiB | 2.54 MiB/s, done.
+From https://github.com/zcor/uw_fintech_21
+ * branch            HEAD       -> FETCH_HEAD
+Updating 0499cce..5391074
+Fast-forward
+ Activities/12-Supervised-Learning/1/Images/12-2-logistical-regression-fit.gif                  |  Bin 0 -> 133762 bytes
+ Activities/12-Supervised-Learning/1/Images/decision-trees-2.png                                |  Bin 0 -> 231768 bytes
+ Activities/12-Supervised-Learning/1/Images/feature-importance.png                              |  Bin 0 -> 44019 bytes
+ Activities/12-Supervised-Learning/1/Images/hyperplane_orientation.png                          |  Bin 0 -> 40773 bytes
+ Activities/12-Supervised-Learning/1/Images/margin_of_separation.png                            |  Bin 0 -> 84354 bytes
+ Activities/12-Supervised-Learning/1/Images/support_vectors.png                                 |  Bin 0 -> 85289 bytes
+ Activities/12-Supervised-Learning/1/Images/svm-hyperplane.png                                  |  Bin 0 -> 77236 bytes
+ Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/README.md                            |    5 +
+ Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Resources/credit_data.csv            | 1001 ++++++++++
+ Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Resources/credit_data_desc.txt       |  128 ++
+ Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Solved/knn.ipynb                     | 1000 ++++++++++
+ Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Unsolved/knn.ipynb                   |  932 ++++++++++
+ Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/README.md                            |   29 +
+ Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Resources/bank-names.txt             |   70 +
+ Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Resources/bank.csv                   | 4522 ++++++++++++++++++++++++++++++++++++++++++++++
+ Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Solved/knn.ipynb                     |  848 +++++++++
+ Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Unsolved/knn.ipynb                   |  846 +++++++++
+ Activities/12-Supervised-Learning/2/Activities/03_Ins_Random_Resampling/README.md              |    5 +
+ .../2/Activities/03_Ins_Random_Resampling/Solved/random_resampling.ipynb                       |  475 +++++
+ .../2/Activities/03_Ins_Random_Resampling/Unsolved/random_resampling.ipynb                     |  420 +++++
+ Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/README.md              |   54 +
+ Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/Resources/bank.csv     | 4522 ++++++++++++++++++++++++++++++++++++++++++++++
+ .../2/Activities/04_Stu_Random_Resampling/Solved/random_resampling.ipynb                       | 1026 +++++++++++
+ .../2/Activities/04_Stu_Random_Resampling/Unsolved/random_resampling.ipynb                     |  513 ++++++
+ Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/README.md           |    5 +
+ Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/Resources/SMOTE.pdf |  Bin 0 -> 531172 bytes
+ .../2/Activities/05_Ins_Synthetic_Resampling/Solved/synthetic_resampling.ipynb                 |  504 ++++++
+ .../2/Activities/05_Ins_Synthetic_Resampling/Unsolved/synthetic_resampling.ipynb               |  452 +++++
+ Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/README.md           |   69 +
+ Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/Resources/bank.csv  | 4522 ++++++++++++++++++++++++++++++++++++++++++++++
+ .../2/Activities/06_Stu_Synthetic_Resampling/Solved/synthetic_resampling.ipynb                 | 1210 +++++++++++++
+ .../2/Activities/06_Stu_Synthetic_Resampling/Unsolved/synthetic_resampling.ipynb               | 1209 +++++++++++++
+ Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/README.md         |    5 +
+ .../2/Activities/07_Ins_Balanced_Random_Forest/Resources/credit_data.csv                       | 1001 ++++++++++
+ .../2/Activities/07_Ins_Balanced_Random_Forest/Resources/credit_data_desc.txt                  |  128 ++
+ .../2/Activities/07_Ins_Balanced_Random_Forest/Solved/balanced_random_forest.ipynb             |  423 +++++
+ .../2/Activities/07_Ins_Balanced_Random_Forest/Unsolved/balanced_random_forest.ipynb           |  403 +++++
+ 37 files changed, 26327 insertions(+)
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/12-2-logistical-regression-fit.gif
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/decision-trees-2.png
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/feature-importance.png
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/hyperplane_orientation.png
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/margin_of_separation.png
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/support_vectors.png
+ create mode 100644 Activities/12-Supervised-Learning/1/Images/svm-hyperplane.png
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Resources/credit_data.csv
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Resources/credit_data_desc.txt
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Solved/knn.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/01_Ins_KNN/Unsolved/knn.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Resources/bank-names.txt
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Resources/bank.csv
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Solved/knn.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/02_Stu_KNN/Unsolved/knn.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/03_Ins_Random_Resampling/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/03_Ins_Random_Resampling/Solved/random_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/03_Ins_Random_Resampling/Unsolved/random_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/Resources/bank.csv
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/Solved/random_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/04_Stu_Random_Resampling/Unsolved/random_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/Resources/SMOTE.pdf
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/Solved/synthetic_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/05_Ins_Synthetic_Resampling/Unsolved/synthetic_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/Resources/bank.csv
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/Solved/synthetic_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/06_Stu_Synthetic_Resampling/Unsolved/synthetic_resampling.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/README.md
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/Resources/credit_data.csv
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/Resources/credit_data_desc.txt
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/Solved/balanced_random_forest.ipynb
+ create mode 100644 Activities/12-Supervised-Learning/2/Activities/07_Ins_Balanced_Random_Forest/Unsolved/balanced_random_forest.ipynb
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % ls 
+Activities			classwork			w01				w07
+Quandl_API_Key			jupyternotes.ipynb		w02				w10  
+README.md			p1				w03				w11
+Simulation-1			p1 not included in repo		w04				w12
+Untitled.ipynb			python_project			w05
+career_skills			submission-cli 1.27.28 PM.txt	w06
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % cd w11
+(base) zrowgz@Eamons-MacBook-Pro w11 % ls
+11-1-5-timezones		11-2-5-stockVOL-vsGoogleTrends	c1				uw-challenge-11
+11-1-7-visualStockData		11-3-6-scarvesOpportunities	c2
+(base) zrowgz@Eamons-MacBook-Pro w11 % cd uw-challenge-11 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git init
+ls
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/zrowgz/Desktop/fintech-workspace/w11/uw-challenge-11/.git/
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % ls
+Resources			forecasting_net_prophet.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git pull git@github.com:ZrowGz/uw-challenge-11.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.57 KiB | 267.00 KiB/s, done.
+From github.com:ZrowGz/uw-challenge-11
+ * branch            HEAD       -> FETCH_HEAD
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % ls
+README.md			Resources			forecasting_net_prophet.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % cd ..
+(base) zrowgz@Eamons-MacBook-Pro w11 % ls
+11-1-5-timezones		11-2-5-stockVOL-vsGoogleTrends	c1				uw-challenge-11
+11-1-7-visualStockData		11-3-6-scarvesOpportunities	c2
+(base) zrowgz@Eamons-MacBook-Pro w11 % cd uw-challenge-11                                
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % ls
+README.md			Resources			forecasting_net_prophet.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Resources/
+	forecasting_net_prophet.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git add .
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git commit -m "code base"
+[master ebc5d39] code base
+ 4 files changed, 87585 insertions(+)
+ create mode 100644 Resources/google_hourly_search_trends.csv
+ create mode 100644 Resources/mercado_daily_revenue.csv
+ create mode 100644 Resources/mercado_stock_price.csv
+ create mode 100644 forecasting_net_prophet.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git remote add git@github.com:ZrowGz/uw-challenge-11.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git remote add uw-challenge-11 git@github.com:ZrowGz/uw-challenge-11.git
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push uw-challenge-11
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream uw-challenge-11 master
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git config --global init.defaultBranch main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git status
+On branch master
+nothing to commit, working tree clean
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git init
+Reinitialized existing Git repository in /Users/zrowgz/Desktop/fintech-workspace/w11/uw-challenge-11/.git/
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git status
+On branch master
+nothing to commit, working tree clean
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git branch -m master main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git status
+On branch main
+nothing to commit, working tree clean
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git remote add origin git@github.com:ZrowGz/uw-challenge-11.git
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push --set-upstream origin main
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 298.78 KiB | 3.64 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:ZrowGz/uw-challenge-11.git
+   ede17c7..ebc5d39  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Already up to date.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Everything up-to-date
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   forecasting_net_prophet.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git add . 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git commit -m "Completed code."
+[main 96a0340] Completed code.
+ 1 file changed, 13417 insertions(+), 151 deletions(-)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push 
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 7.08 MiB | 571.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ZrowGz/uw-challenge-11.git
+   ebc5d39..96a0340  main -> main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git add . 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git commit -m "Update README."
+[main d3eb659] Update README.
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % git push 
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 804 bytes | 804.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ZrowGz/uw-challenge-11.git
+   96a0340..d3eb659  main -> main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-11 % 
